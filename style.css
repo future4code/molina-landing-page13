@@ -80,6 +80,27 @@ main{
     display: flex;
     
 }
+.bg{
+    height: 730px;
+    width: 100%;
+    margin: 0;
+    background-image: url(./img/banner-qm-somos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.bg h3{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+.bg p{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 100px;
+    color: cornsilk;
+
+}
 @media screen and (min-device-width: 320px) and (max-device-width :480px){
    header{
     display: grid;
