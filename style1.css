@@ -1,0 +1,102 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    display: flex;
+    background-color: #fcead5;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
+    
+}
+
+.logo{
+    display: flex;
+    
+}
+.logo img{
+    display: flex;
+    width: 100px;
+    margin: 0 6px 0 6px;
+}
+.logo h2{ 
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto 6px auto 6px;
+    color: black;
+}
+.logo a{
+    display: flex;
+    text-decoration: none;
+}
+nav{
+    display: flex;
+}
+.icone-e-texto{
+    display: flex;
+    margin: 0px 30px 0px 30px;
+}
+.icone-e-texto img{
+    width: 50px;
+    margin: 0 6px 0 6px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+.icone-e-texto p{
+    display: flex;
+    margin: auto 10px 0px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.icone-e-texto a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+footer{
+    display: flex;
+    background-color:#fcead5;
+    
+}
+.redes-sociais img{
+
+    width: 50px;
+    display: flex;
+    justify-content: center;
+   
+}
+.redes-sociais{
+    display: flex;
+    margin: 0px auto 0px auto;
+}
+.container-rede-social{
+    display: flex;
+    margin: 0px auto 0px auto;
+}
+main{
+    width: 100px;
+    display: flex;
+    
+}
+@media screen and (min-device-width: 320px) and (max-device-width :480px){
+   header{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   nav{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .icone-e-texto{
+    margin: 10px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+}
+
+@media screen and (min-device-width:481px) and (max-device-width:800px){
+    
+}
