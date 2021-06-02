@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;    
+}
+
+header{
+    display: flex;
+    background-color: #fcead5;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;    
+}
+
+.logo{
+    display: flex;    
+}
+
+.logo img{
+    display: flex;
+    width: 100px;
+    margin: 0 6px 0 0;
+}
+
+.logo h2{ 
+    display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto 6px auto 6px;
+    color: black;
+}
+
+.logo a{
+    display: flex;
+    text-decoration: none;
+}
+
+nav{
+    display: flex;
+}
+
+.icone-e-texto{
+    display: flex;
+    margin: 0px 30px 0px 30px;
+}
+
+.icone-e-texto img{
+    width: 50px;
+    margin: 0 6px 0 6px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+} 
+
+.icone-e-texto p{
+    display: flex;
+    margin: auto 10px 0px 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.icone-e-texto a{
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
+/* Configurações da main index */
+
+main{    
+    background: linear-gradient(60deg, #FCEAD5, #FCD18D, #FCB78C, #FC984D);
+    animation: cores, 15s, ease, infinite;
+}
+
+@keyframes cores{
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container-a1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+
+.imagemCelular img{
+    margin-top: -90%;
+    margin-left: 120%;
+    height: 400px;           
+}
+
+.mensagem1 {
+    margin-right: 40%;
+    margin-top: 5%;   
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    font-size: 1.90rem;
+    line-height: 1.16;
+    text-shadow: rgb(27, 28, 29) 1px 1px;
+    color: #FC984D;
+}
+
+.mensagem2 {
+    margin-right: 40%;
+    margin-left: 4%;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: pre-line;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    font-size: 1.75rem;
+    line-height: 1.16;
+    color: rgb(17, 17, 17);    
+}
+
+.container-a2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;        
+}
+
+.imagemCartao img{
+    margin-top: -120%;
+    margin-bottom: 20px;
+    height: 400px;
+    margin-left: -90%;
+    border-radius: 20px;           
+}
+
+.mensagem3 {
+    margin-left: 600px;
+    text-align: center;    
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    font-size: 1.90rem;
+    line-height: 1.16;
+    text-shadow: rgb(27, 28, 29) 1px 1px;
+    color: #FC984D;
+}
+
+.mensagem4 {
+    text-align: center;
+    margin-left: 600px;
+    font-family: "Gotham SSm A", "Gotham SSm B", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    white-space: pre-line;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    font-size: 1.75rem;
+    line-height: 1.16;
+    color: rgb(17, 17, 17);   
+}
+
+footer{
+    display: flex;
+    background-color:#fcead5;       
+}
+
+.redes-sociais img{
+
+    width: 50px;
+    display: flex;
+    justify-content: center;   
+}
+
+.redes-sociais{
+    display: flex;
+    margin: 0px auto 0px auto;
+}
+
+.container-rede-social{
+    display: flex;
+    margin: 0px auto 0px auto;
+}
+
+.bg{
+    height: 730px;
+    width: 100%;
+    margin: 0;
+    background-image: url(./img/banner-qm-somos.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg h3{
+    font-size: 60px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
+
+.bg p{
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 100px;
+    color: cornsilk;
+
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width :480px){
+   header{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   nav{
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+   .icone-e-texto{
+    margin: 10px 20px 0px 20px;
+    display: grid;
+    grid-template-columns: 1fr;
+   }
+
+}
+
+@media screen and (min-device-width:481px) and (max-device-width:800px){
+    
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono');
+
+/* Zerando as propriedades e definindo altura e largura do index */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    background-color:rgb(68, 64, 64);
+     
+}
+
+/* Configurações do header da index */
+
+.intro{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    background:url(https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F28b44fa9-b34c-4321-a2c2-7e425f680408%2Ff4bank.png?table=block&id=a7a844f0-a9fe-4a92-8b97-08e82f86309a&spaceId=f97190af-c9c2-4592-9ae2-6311b6b728de&width=1000&userId=dddefe4b-b469-44d2-a212-c7f28d627466&cache=v2) no-repeat 50% 50%;
+    top: 0;
+    display:table;
+    background-size: cover;
+}
+
+.intro .inner{
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+    max-width: none;
+}
+
+.content{
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 500px;
+}
+
+.btn{
+    border-radius: 20px;
+    color: #fcead5;
+    border: 3px solid #fcead5;
+    padding: 3px 10px;
+    box-shadow: 1px 2px 1px 1px rgba(224, 216, 216, 0.8);
+    cursor:pointer;
+    transition: all 0.5s ease;
+    text-decoration: none;     
+}
+
+.content h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 200%;
+    font-weight: bold;
+    text-align:center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+.btn:hover{
+    color: rgb(228, 213, 213);
+    border: solid rgb(68, 64, 64) 3px;
+    background-color: rgb(68, 64, 64);
+}
+
+/* Configurações da main da index*/
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border: none;    
+}
+
+p, h1{
+  line-height: 10%;
+  border: none;  
+}
+
+#mensagem1{
+    font-family: "Roboto+Mono", sans-serif;
+    color:#FC984D;
+    font-size: 300%;
+    text-align: center;
+    border: none;
+}
+
+#mensagem2{
+    font-family: "Roboto+Mono", sans-serif;
+    color:#FC984D;
+    font-size: 300%;
+    text-align: center;
+    border: none;    
+}
+
+/* Configurações do footer da index*/
+
+.midiasSociais {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    letter-spacing: 30px;
+    text-decoration: none;
+    cursor: pointer;       
+}
+
+#black{
+    color: #FC984D;
+    align-items: center;    
+}
+
+.seguirRedes{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    color: #FC984D;
+    font-weight: bold;
+    margin-right: 30px;
+    margin-top: -50px;
+    
+}
+
+/* Responsividade para telas menores da index */
+
+@media screen and (max-width: 450px) {
+    .intro{
+        height: 85%;
+    }
+    .content h2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50%;
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 200%;        
+    }
+    p {
+        display: none;
+    }
+    h1 {
+        line-height: 120%;
+    }
+    #mensagem2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 60%;
+        text-align:center;
+        word-wrap: normal;    
+    }
+}
+
+@media screen and (max-width: 780px){
+    p {
+        display: none;
+    }
+    h1 {
+        line-height: 120%;
+    }
+    #mensagem2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 200%;
+        text-align:center;                
+    }
+}
+
+@media screen and (max-width: 1130px){
+    p {
+        display: none;
+    }
+    h1 {
+        line-height: 120%;
+    }
+    #mensagem2{
+        display: flex;
+        justify-content: space-between;
+        font-size: 300%;
+        text-align:center;                
+    }
+}
